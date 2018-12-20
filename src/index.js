@@ -11,7 +11,7 @@ import configureStore from './redux/configureStore';
 
 const store = configureStore();
 
-// We should use provider and connect but not enough time
+// We should use Provider and connect, not enough time though
 ReactDOM.render(<App store={store}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

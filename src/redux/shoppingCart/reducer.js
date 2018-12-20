@@ -8,6 +8,7 @@ const shoppingCartReducer = (state = initialState, action) => {
         case a.GET_PIZZA_SIZES:
             {
                 const pizzaSizesData = action.data;
+                
                 // first data field is from axios, second is from graphql
                 state = Object.assign({}, state, { pizzaSizes: pizzaSizesData.data.data });
 
@@ -18,8 +19,6 @@ const shoppingCartReducer = (state = initialState, action) => {
             {
                 const pizzaSizeData = action.data;
 
-                console.log('data from select pizza size ' + JSON.stringify(pizzaSizeData));
-
                 state = Object.assign({}, state, { pizzaSizeSelected: pizzaSizeData });
 
                 return state;
@@ -29,28 +28,6 @@ const shoppingCartReducer = (state = initialState, action) => {
             {
                 const topping = action.data.topping;
                 const index = action.data.index;
-
-                console.log('data from toggle toping is ' + JSON.stringify(topping));
-
-                //state = Object.assign({}, state, { ...state.pizzaSizeSelected.toppings, topping })
-                //return state;
-
-                /*
-                return {
-                    ...state, 
-                    pizzaSizeSelected: { 
-                        ...state.pizzaSizeSelected, 
-                        toppings: {
-                            ...state.pizzaSizeSelected.toppings,
-                            topping,
-                        }
-                    }
-                }
-                */
-
-                //return state;
-
-
                 
                 return {
                     ...state,
