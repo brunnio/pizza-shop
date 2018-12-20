@@ -1,10 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pizza Shop
+Reactjs + Redux + GraphQL
+
+<div>
+  <img src="../master/samples/screenshot.png" width="100%" title="screenshot">
+</div>
+
+- Install using yarn or yarn install
+- Run it by using yar start
+- It should open automatically a page at [http://localhost:3000](http://localhost:3000) in the default browser.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start` 
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
